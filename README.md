@@ -6,6 +6,9 @@
 
 ## Getting Started
 
+To view the project online, visit [https://nedamohamed.github.io/what-do-i-tweet.github.io/](https://nedamohamed.github.io/what-do-i-tweet.github.io/).
+
+
 The notebooks included in this project can be applied to any twitter archive, especially the data extraction and cleaning. The onky excpetion is for textual data. If your textual data includes a mixture of language including Arabic, Romanized Arabic and English, it will work fine. Please note that it's still not complete. The text sentiment analysis parts of the textual data analysis and lematization were removed from this project due to the time constraints. I will add them later for my own.
 
 You can apply this code to the archive you get from X (formerly Twitter) and get your own analysis.
