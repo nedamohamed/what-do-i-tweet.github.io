@@ -8,23 +8,119 @@
 
     <!-- Example: Include Plotly library -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, p {
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        iframe {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Data Science Project Visualizations</h1>
 
+    <p>Welcome to my data science project! Below are visualizations representing various aspects of the data analysis. The visualizations 
+        are all interactive, so they may take some time to load. Data is from 2019 onwards. The missing sections in the graph are a result 
+        of organically missing data and not dropped data.</p>
+
     <!-- Embed Plotly visualizations using iframes -->
-    <iframe src="Figures/likes-and-retweets-per-day.html" width="800" height="600"></iframe>
-    <iframe src="Figures/mode-hour.html" width="800" height="600"></iframe>
-    <iframe src="Figures/tweet-distribution.html" width="800" height="600"></iframe>
-    <iframe src="Figures/tweets-by-datetime.html" width="800" height="600"></iframe>
-    <iframe src="Figures/tweets-by-hour.html" width="800" height="600"></iframe>
-    <iframe src="Figures/tweets-by-language.html" width="800" height="600"></iframe>
-    <iframe src="Figures/tweets-versus-retweets.html" width="800" height="600"></iframe>
-    <iframe src="Figures/advertisement-frequency.html" width="800" height="600"></iframe>
-    <iframe src="Figures/advertisement-targeting.html" width="800" height="600"></iframe>
-    <iframe src="Figures/correlation-matrix.html" width="800" height="600"></iframe>
-    <iframe src="Figures/emoji-usage.html" width="800" height="600"></iframe>
+    <h2>Likes and Retweets per Day</h2>
+    <p>This chart shows the distribution of likes and retweets per day.</p>
+    <iframe src="Figures/likes-and-retweets-per-day.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Mode Hour</h2>
+    <p>Over time, the hour during which I tweeted the most changed. However, there's still a peak that remained pretty much the same: *evening*.</p>
+    <iframe src="Figures/mode-hour.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Make-Up of My Tweets</h2>
+    <p>This visualization shows how many of my tweets are original tweets, replies, private quotes, public quotes, or retweets.</p>
+    <iframe src="Figures/tweet-distribution.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Tweets by Date-Time</h2>
+    <p>This plot contains all of my activities since 2019. The bigger circles represent more tweets, and each day has a circle for each hour I was active during.</p>
+    <iframe src="Figures/tweets-by-datetime.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Tweets by Hour</h2>
+    <p>This plot shows the number of tweets produced per each since 2019.</p>
+    <iframe src="Figures/tweets-by-hour.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Language Distribution</h2>
+    <p>I do not know any languages other than English, Arabic, and French, so this is a very interesting graph! 
+        The reason for this misclassification by Twitter is that I sometimes use _romanized Arabic_ which is always misinterpreted as another language.</p>
+    <iframe src="Figures/tweets-by-language.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Number of Tweets versus Number of Retweets</h2>
+    <p>It's interesting to see how this pattern changes during big events. As an Egyptian, it was expected that I react during the Egyptian MeToo movement and 
+        again during the devaluation of the currency in October of 2022. The Israeli aggression on Gaza also led to a rise in the number of retweets in comparison to tweets,
+        and this might be because I'm not a professional on the matter, so I retweet rather than say something new. Number of tweets generally decreased during that period too, 
+        which makes sense as well. I find it shameful to tweet like I usually would when people are being massacred, so I didn't tweet as much.</p>
+    <iframe src="Figures/tweets-versus-retweets.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Advertisement Frequency</h2>
+    <p>This graph shows how often a specific targeting value was used in advertisements I was shown. Location, obviously, was mostly used.</p>
+    <iframe src="Figures/advertisement-frequency.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Advertisement Targeting</h2>
+    <p>This shows how often each targeting category was used to show me advertisements. A targeting category can be "interests" or "keywords" relevant to me.</p>
+    <iframe src="Figures/advertisement-targeting.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+    
+    <iframe src="Figures/correlation-matrix.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Which emojis do I use most?</h2>
+    <p>Explore the emoji usage patterns in my tweets.</p>
+    <iframe src="Figures/emoji-usage.html" width="800" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Takeaways!</h2>
+    <p>Mostly, my graphs confirm what I know about myself. I'm usually active towards the evening, and sometimes early morning. I don't tweet as much during
+    a human rights disaster, but rather retweet. I tweet a lot when a crisis happens in Egypt, my home. The data confirms all of this. I also had some personal issues in the Summer
+    of 2023, and I found solace in my friends, which explains the general rise of tweet rate that can be observed during that period. Sentiment analysis of the tweets would have confirmed
+    that.</p>
 
     <!-- Include any additional scripts or libraries here -->
 
