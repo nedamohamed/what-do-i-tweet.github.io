@@ -45,57 +45,51 @@
     <h1>CS 210 Project: Analyzing Tweeting Patterns</h1>
 
     <p>Welcome to my data science project! Below are visualizations representing various aspects of the data analysis. The visualizations 
-        are all interactive, so they may take some time to load. Data is from 2019 onwards. The missing sections in the graph are a result 
-        of organically missing data and not dropped data.</p>
+        are all interactive, so they may take some time to load.</p>
 
-    <p>The dataset consisted of around 12800 tweets and retweets. The raw data can not be disclosed for privacy concerns, but each tweet had an associated number of likes, number of 
-    retweets, classified language, hashtags and mentions.</p>
+    <h2>Description of the Dataset</h2>
+
+    <p>I obtained this data by requesting it from my Twitter archive. It ranges from mid-2019 to November 2023. There is a period that seems to be ‘missing‘ in the data, but
+        it is organically missing. This means that it was not present in the archive to begin with. The reason for this is that I had deleted a lot of my twetes of that periodon my own
+        a couple of years ago.</p>
+    
+       <p>The dataset consisted of around 12800 tweets and retweets. The raw data can not be disclosed for privacy concerns, but each tweet had an associated number of likes, number of 
+    retweets, classified language, hashtags and mentions. Another set of data I used was that concerned with advertisements which consisted of around 24000 instances of advertisements over the period of me
+       having Twitter, approximately 7 years.</p>
+
+    <p>This data can be found in the GitHub repository for this website under /data.</p>
 
     <!-- Embed Plotly visualizations using iframes -->
+
+     <h2>Make-Up of My Tweets</h2>
+    <p>This visualization shows how many of my tweets are original tweets, replies, private quotes, public quotes, or retweets.</p>
+    <iframe src="Figures/tweet-distribution.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>This becomes interesting information after I explain why I would choose to do a circle quote versus a public quote. If I make a circle quote, visible only to people in my
+    circle, which used to be an old Twitter feature, I would often be very critical, to put it nicely, of what I'm quoting. In other words, this shows the fraction representing the number
+    of times I expressed my aggressive criticism in comparison to all of my expressions.</p>
+
+    <!-- Line break -->
+    <br>
+
+       <h2>Mode Hour</h2>
+    <p>Over time, the hour during which I tweeted the most changed. However, there's still a peak that remained pretty much the same: evening.</p>
+    <iframe src="Figures/mode-hour.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>This is a very detailed graph that shows the hour during which I tweeted most for every day in the dataset. Often, the peaks would be around the same time for consecutive days, given
+    that I am a person who has a routine. Because of my routine, it would make sense that most tweets are either early morning or around evening.</p>
+
+    <!-- Line break -->
+    <br>
+    
     <h2>Likes and Retweets per Day</h2>
     <p>This chart shows the distribution of likes and retweets per day.</p>
     <iframe src="Figures/likes-and-retweets-per-day.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>The number of tweets is somewhat constant with some sudden peaks every once in a while. These peaks are always due to Tweets that became popular for any reason. Mostly, these tweets
+    were jokes or silly screenshots.</p>
 
     <!-- Line break -->
     <br>
 
-    <h2>Mode Hour</h2>
-    <p>Over time, the hour during which I tweeted the most changed. However, there's still a peak that remained pretty much the same: evening.</p>
-    <iframe src="Figures/mode-hour.html" width="100%" height="600" loading="lazy"></iframe>
-
-    <!-- Line break -->
-    <br>
-
-    <h2>Make-Up of My Tweets</h2>
-    <p>This visualization shows how many of my tweets are original tweets, replies, private quotes, public quotes, or retweets.</p>
-    <iframe src="Figures/tweet-distribution.html" width="100%" height="600" loading="lazy"></iframe>
-
-    <!-- Line break -->
-    <br>
-
-    <h2>Tweets by Date-Time</h2>
-    <p>This plot contains all of my activities since 2019. The bigger circles represent more tweets, and each day has a circle for each hour I was active during.</p>
-    <iframe src="Figures/tweets-by-datetime.html" width="100%" height="600" loading="lazy"></iframe>
-
-    <!-- Line break -->
-    <br>
-
-    <h2>Tweets by Hour</h2>
-    <p>This plot shows the number of tweets produced per each since 2019.</p>
-    <iframe src="Figures/tweets-by-hour.html" width="100%" height="600" loading="lazy"></iframe>
-
-    <!-- Line break -->
-    <br>
-
-    <h2>Language Distribution</h2>
-    <p>I do not know any languages other than English, Arabic, and French, so this is a very interesting graph! 
-        The reason for this misclassification by Twitter is that I sometimes use romanized Arabic which is always misinterpreted as another language.</p>
-    <iframe src="Figures/tweets-by-language.html" width="100%" height="600" loading="lazy"></iframe>
-
-    <!-- Line break -->
-    <br>
-
-    <h2>Number of Tweets versus Number of Retweets</h2>
+      <h2>Number of Tweets versus Number of Retweets</h2>
     <p>It's interesting to see how this pattern changes during big events. As an Egyptian, it was expected that I react during the Egyptian MeToo movement and 
         again during the devaluation of the currency in October of 2022. The Israeli aggression on Gaza also led to a rise in the number of retweets in comparison to tweets,
         and this might be because I'm not a professional on the matter, so I retweet rather than say something new. A number of tweets generally decreased during that period too, 
@@ -104,6 +98,51 @@
     <p>There is also a peak around the Summer of 2023 which is a time I strongly reconnected with friends back home through online activity.</p>
     
     <iframe src="Figures/tweets-versus-retweets.html" width="100%" height="600" loading="lazy"></iframe>
+
+    <p>One would think that this graph and the previous graph should align, but they don't. This might be because of the audience difference. When I first started actively tweeting, I did not
+    have much of a following, unlike now. This can explain the general rise in likes and thus explain why these graphs are not as complimentary as they should be intuitively.</p>
+
+    <!-- Line break -->
+    <br>
+
+        <h2>Correlation Matrix</h2>
+        <p>There's a positive correlation between likes and retweets which makes perfect sense.</p>
+    <iframe src="Figures/correlation-matrix.html" width="100%" height="600" loading="lazy"></iframe>
+        
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Tweets by Date-Time</h2>
+    <p>This plot contains all of my activities since 2019. The bigger circles represent more tweets, and each day has a circle for each hour I was active during.</p>
+    <iframe src="Figures/tweets-by-datetime.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>Some days only had one hour of activity, others had more. This graph can be used to tell more information about my routine. How often I tweet in the morning can suggest how free or
+    busy I am in the mornings. The circle sizes represent the day number of tweets. In order to see the specific hour, the graph needs to be zoomed in.</p>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Tweets by Hour</h2>
+    <p>This plot shows the cumulative sum of tweets produced per each since 2019. This aligns with any activity graph shown so far which shows that I am most active during the evening.</p>
+    <iframe src="Figures/tweets-by-hour.html" width="100%" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+    <h2>Language Distribution</h2>
+    <p>I do not know any languages other than English, Arabic, and French, so this is a very interesting graph! 
+        The reason for this misclassification by Twitter is that I sometimes use Romanized Arabic which is always misinterpreted as another language.</p>
+    <iframe src="Figures/tweets-by-language.html" width="100%" height="600" loading="lazy"></iframe>
+
+    <!-- Line break -->
+    <br>
+
+        <h2>Which emojis do I use most?</h2>
+    <p>Explore the emoji usage patterns in my tweets.</p>
+    <iframe src="Figures/emoji-usage.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>This graph is very funny. The reason the crying emoji is the most used one is that I use it when I find something funny, which seems to be very often. I usually use a few in one message, not just one,
+    explaining the high number. However, I use the laughing emoji when I am being sarcastic or making fun of something, and this also applies to the "rolling on the floor laughing" emoji. What we can conclude is
+    that I should learn to be nicer. :)</p>
 
     <!-- Line break -->
     <br>
@@ -118,21 +157,8 @@
     <h2>Advertisement Targeting</h2>
     <p>This shows how often each targeting category was used to show me advertisements. A targeting category can be "interests" or "keywords" relevant to me.</p>
     <iframe src="Figures/advertisement-targeting.html" width="100%" height="600" loading="lazy"></iframe>
-
-    <!-- Line break -->
-    <be>
-
-    <h2>Correlation Matrix</h2>
-        <p>There's a positive correlation between likes and retweets which makes perfect sense.</p>
-    <iframe src="Figures/correlation-matrix.html" width="100%" height="600" loading="lazy"></iframe>
-        
-
-    <!-- Line break -->
-    <br>
-
-    <h2>Which emojis do I use most?</h2>
-    <p>Explore the emoji usage patterns in my tweets.</p>
-    <iframe src="Figures/emoji-usage.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>Most of the targeting, as shown in the previous graph, was relevant to location and device, which makes sense when we look at this graph. The distribution for other categories is
+    pretty low, almost negligible, in comparison.</p>
 
     <!-- Line break -->
     <br>
@@ -141,7 +167,15 @@
     <p>Mostly, my graphs confirm what I know about myself. I'm usually active towards the evening, and sometimes ea I don't tweet as much during
     a human rights disaster but rather retweet. I tweet a lot when a crisis happens in Egypt, my home. The data confirms all of this. I also had some personal issues in the Summer
     of 2023, and I found solace in my friends, which explains the general rise in tweet rate that can be observed during that period. Sentiment analysis of the tweets would have confirmed
-    that. Prelimnary analysis showed very negative sentiments during this period in comparison to others.</p>
+    that. Preliminary analysis showed very negative sentiments during this period in comparison to others.</p>
+
+    <p>I plan on adding the result of the natural language analysis as I am sure that this will show a lot more than the quantitative analysis. However, given the multilingual nature of the
+    dataset, this is proving difficult as the applicable approaches will kill the uniqueness of my dataset. The current approach is to transliterate the Romanized Arabic to proper Arabic and
+    use Arabic NLP models to analyze it.</p>
+
+    <p>Generally, the data obtained so far shows a lot about my patterns and routines. My routine can be traced from my activity on Twitter, which is where I'm most active out of all
+    social media platforms. The next step would be analyzing the tweets during peak activity and establishing a scheme that is able to predict whether or not I will be active and responsve
+    on Twitter given some happenings.</p>
 
     <!-- Include any additional scripts or libraries here -->
 
