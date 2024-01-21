@@ -3,8 +3,8 @@
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
-- [What Is This?] (#what-is-this?)
-- [Next Steps] (#next-steps)
+- [What Is This?](#what-is-this?)
+- [Next Steps](#next-steps)
 
 ## Getting Started
 
