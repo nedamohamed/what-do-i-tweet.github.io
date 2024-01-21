@@ -128,7 +128,8 @@
     <p>This plot contains all of my activities since 2019. The bigger circles represent more tweets, and each day has a circle for each hour I was active during.</p>
     <iframe src="Figures/tweets-by-datetime.html" width="100%" height="600" loading="lazy"></iframe>
     <p>Some days only had one hour of activity, others had more. This graph can be used to tell more information about my routine. How often I tweet in the morning can suggest how free or
-    busy I am in the mornings. The circle sizes represent the day number of tweets. In order to see the specific hour, the graph needs to be zoomed in.</p>
+    busy I am in the mornings. The circle sizes represent the day number of tweets. To see the specific hour, the graph needs to be zoomed in.</p>
+    <p>Some events have famous timestamps. For example, the first wave of the second devaluation of the Egyptian Pound happened around midday mid-October. An online reaction should be expected in the following hours, and we can confirm this with content analysis. Now, the missing information is what kind of events are we looking for. If we are able to map out dates for events, we can see if a user responded to these events and how strongly they responded to them and how strongly their followers did as well by comparing content analysis (to confirm that this is indeed a response) to activity.</p>
 
     <!-- Line break -->
     <br>
@@ -136,6 +137,7 @@
     <h2>Tweets by Hour</h2>
     <p>This plot shows the cumulative sum of tweets produced per each since 2019. This aligns with any activity graph shown so far which shows that I am most active during the evening.</p>
     <iframe src="Figures/tweets-by-hour.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>This graph is the shallow version of the mode hour graph, and it is not that misleading. Often, the surface-level analysis can be misleading and give us false leads to conclusions, but in-depth analysis confirmed that there is an ongoing trend of being most active during these hours.</p>
 
     <!-- Line break -->
     <br>
@@ -144,6 +146,11 @@
     <p>I do not know any languages other than English, Arabic, and French, so this is a very interesting graph! 
         The reason for this misclassification by Twitter is that I sometimes use Romanized Arabic which is always misinterpreted as another language.</p>
     <iframe src="Figures/tweets-by-language.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>This graph is one of the reasons why NLP is a very hard task on this dataset. The content of the tweets is multilingual. One tweet can mix up to three languages and two different writing scripts. Being able to process such data without ruining its uniqueness is a very hard task. Here's an example of a tweet you can find:</p>
+
+    <p>"i'm genuinely so sick of uni begad تعبت, men albi te3ebt. leghayet hena w begad merci."</p>
+
+    <p>This tweet is a mixture of English, Arabic, Romanized Arabic (Egyptian dialect) and French. Being able to separate it without ruining the data is very hard. However, we are very close to getting meaningful analysis out of the tweet content. This is currently in the works.</p>
 
     <!-- Line break -->
     <br>
@@ -154,6 +161,7 @@
     <p>This graph is very funny. The reason the crying emoji is the most used one is that I use it when I find something funny, which seems to be very often. I usually use a few in one message, not just one,
     explaining the high number. However, I use the laughing emoji when I am being sarcastic or making fun of something, and this also applies to the "rolling on the floor laughing" emoji. What we can conclude is
     that I should learn to be nicer. :)</p>
+    <p>So far, we can tell that I am not a very nice Tweeter. Sentiment analysis might confirm this if only ran on the original posts and not replies, knowing myself. The emojis strongly show this. In comparison to the number of tweets I have, the number of hearts I used is disproportionate in comparison to sarcastic emojis. This is something that I learnt about myself from the dataset.</p>
 
     <!-- Line break -->
     <br>
@@ -187,6 +195,8 @@
     <p>Generally, the data obtained so far shows a lot about my patterns and routines. My routine can be traced from my activity on Twitter, which is where I'm most active out of all
     social media platforms. The next step would be analyzing the tweets during peak activity and establishing a scheme that is able to predict whether or not I will be active and responsve
     on Twitter given some happenings.</p>
+
+    <p>The lost data in 2021 would add so much to the analysis, but they have been permanently deleted, unfortunately. Ways to recover such data should be explored to have a more complete picture. What we have right now is a puzzle with missing pieces. Patterns of tweeting, rewteeting and general engagement changed drastically when we compare the before and after. The change should not be drastic, logically, so this needs to be explored.</p>
 
     <!-- Include any additional scripts or libraries here -->
 
