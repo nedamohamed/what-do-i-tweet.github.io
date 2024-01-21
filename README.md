@@ -3,6 +3,8 @@
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
+- [What Is This?] (#what-is-this?)
+- [Next Steps] (#next-steps)
 
 ## Getting Started
 
@@ -39,4 +41,35 @@ Here's a brief explanation for what each file includes:
 ## Prerequisites
 
 All the prerequisites are in the first cell of every ipynb under "imports".
+
+In order to see the project, all you need to do is visit the website linked above.
+
+## What Is This?
+
+The data I worked with consisted of over 12800 tweets and over 24000 instances of advertisements.
+
+The analysis of this data aimed to discover patterns in my activvity and hopefully content and map them to what I already know about myself.
+
+Pre-analysis, I had some ideas about the patterns I would find:
+
+- I will be tweeting more over time.
+- I will be most active during the evenings.
+- Content analysis will show interest in history and Egyptian politics.
+
+I conducted analysis on my activity by mapping my activity over the years and how often I tweet. Spikes in my activity was easily correlated with events happening at the time. For example, during the MeToo movement in Egypt starting July 2020, my activity saw its first spike. During the devaluation of the Egyptian pound, a spike can be seen, for every devaluation for that matter. Since the devaluation was usually gradual, the spike would last usually a week. This can be seen on the relevant graphs on the website.
+
+Likes and retweets my tweets received are a good indication if how interactive my following is. Post COVID-19, a lot of my friends connected with me on Twitter, which explains the rise of interactions July 2020 onwards. It was also at this time that I started working in a popular magazine online, gaining more online traction.
+
+So far, we can trace online patterns to changes and responses in my life.
+
+The activity mapped to time shows my routine. How much time to do I have on my hand to tweet is exactly what this shows. When we look at the number of tweets I produced at each hour of the day, it's easy to spot that it's during the evenings that I'm most free.
+
+However, this can be misleading. Tweeting does not necessarily equate free, but perhaps distracted. In order to get more out of this graph, it would be a good approach to compare it to my Google Calendar data and see whether or not I was free at the time.
+
+## Next Steps
+
+1. General content analysis and special analysis to the periods where there are spikes to see if the spikes are responses to the events happening.
+2. Sentiment analysis to parallel it with events.
+3. Cross-referencing data to Google Calendar.
+
 
