@@ -149,10 +149,12 @@
     <br>
 
     <h2>Language Distribution</h2>
+    <p>This graph shows the language distribution of my tweets. Twitter classifies tweets into languages using language models. However, this visualization is incredibly misleading. If it measures anything, it measures the incompatibility of this model with
+        multilingual instances of data. The graph shows how many times I tweeted in a certain language.</p>
     <p>I do not know any languages other than English, Arabic, and French, so this is a very interesting graph! 
         The reason for this misclassification by Twitter is that I sometimes use Romanized Arabic which is always misinterpreted as another language.</p>
     <iframe src="Figures/tweets-by-language.html" width="100%" height="600" loading="lazy"></iframe>
-    <p>This graph is one of the reasons why NLP is a very hard task on this dataset. The content of the tweets is multilingual. One tweet can mix up to three languages and two different writing scripts. Being able to process such data without ruining its uniqueness is a very hard task. Here's an example of a tweet you can find:</p>
+    <p>This graph shows one why NLP is a very hard task on this dataset. The content of the tweets is multilingual. One tweet can mix up to three languages and two different writing scripts. Being able to process such data without ruining its uniqueness is a very hard task. Here's an example of a tweet you can find:</p>
 
     <p>"i'm genuinely so sick of uni begad تعبت, men albi te3ebt. leghayet hena w begad merci."</p>
 
@@ -174,16 +176,30 @@
 
     <h2>Advertisement Frequency</h2>
     <p>This graph shows how often a specific targeting value was used in advertisements I was shown. Location, obviously, was mostly used.</p>
+    <p>This means that my location being in Turkey was very relevant to ad targeting and was very heavily utilized as it was more relevant to tge ads. This can help us draw some picture about my timeline.</p>
     <iframe src="Figures/advertisement-frequency.html" width="100%" height="600" loading="lazy"></iframe>
+    <p>We can infer so much information from this graph. We can infer that:</p>
+    <p>1. I'm an iPhone user.</p>
+    <p>2. I have lived in Turkey and Egypt.</p>
+    <p>3. I'm an adult.</p>
+    <p>4. I'm interested in enterpreneurship, politics and literature.</p>
+    <p>5. I speak Arabic and English.</p>
+    
+    <p>We can infer a lot more than this too. This is the analysis at a glance.</p>
 
     <!-- Line break -->
     <br>
 
     <h2>Advertisement Targeting</h2>
     <p>This shows how often each targeting category was used to show me advertisements. A targeting category can be "interests" or "keywords" relevant to me.</p>
+    <p>Without information about how targetting is done, this graph is not really valuable. It might be a general trend where interests and then keywords are used to target users. Interest usually lies in topics or locations. For example, if I have an interest in politics and graduate
+        studies, I'll see an ad from some university. Keywords are usually, not always, standalone interests. For example, "money" can be a keyword. If anything, keywords and interests are very similar.
+    </p>
     <iframe src="Figures/advertisement-targeting.html" width="100%" height="600" loading="lazy"></iframe>
-    <p>Most of the targeting, as shown in the previous graph, was relevant to location and device, which makes sense when we look at this graph. The distribution for other categories is
+    
+    <p>Most of the targeting, as shown in the previous graph, was relevant to location and device, which makes sense when we look at this graph. The location and device were often in the "keywords" and "interests" categories. The distribution for other categories is
     pretty low, almost negligible, in comparison.</p>
+    <p>The categorization of targets is not consistent in the dataset as some targeting values belong to more than one category and are categorized differently each time. The previous visualization definitely gives more information about who I am.</p>
 
     <!-- Line break -->
     <br>
